@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HIMANI JANGAM | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header-inner">
+        <a class="brand" href="#home">HIMANI JANGAM</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="nav" id="navMenu">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#education">Education</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Senior Software Engineer</p>
+            <h1>Hi, I’m Himani Jangam.</h1>
+            <p class="hero-text">
+              I architect and scale distributed systems, microservices, and event-driven platforms on AWS. I build self-service, fault-tolerant platforms that reduce operational risk and accelerate global launches.
+            </p>
+            <div class="hero-actions">
+              <a class="button primary" href="#contact">Contact me</a>
+              <a class="button secondary" href="resume.html" download="HIMANI_JANGAM_Resume.html">Download resume</a>
+            </div>
+          </div>
+          <div class="hero-card">
+            <img class="profile-photo" src="https://avatars.githubusercontent.com/u/55857710?v=4" alt="Himani Jangam" />
+            <div class="card-inner">
+              <h2>Key outcomes</h2>
+              <p>Established systems for 7M+ MAU, accelerated launches by 94%, and built resilient services that reduced errors by 92%.</p>
+              <div class="stats-grid">
+                <div>
+                  <strong>5+</strong>
+                  <span>Years experience</span>
+                </div>
+                <div>
+                  <strong>7M+</strong>
+                  <span>Monthly active users</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="about">
+        <div class="container section-grid">
+          <div>
+            <p class="section-label">About</p>
+            <h2>Senior software engineer focused on scalable AWS platforms.</h2>
+            <p>
+              Senior Software Engineer with 5+ years of experience architecting and scaling distributed systems, microservices, and event-driven architectures on AWS. I have led cross-team initiatives for large retail events and built self-service platforms that improve velocity and reliability.
+            </p>
+            <p>
+              I am passionate about building self-service systems, automating operations, and delivering resilient platforms that reduce manual effort and support rapid growth.
+            </p>
+          </div>
+          <div class="about-cards">
+            <div class="info-card">
+              <h3>Technical strengths</h3>
+              <ul>
+                <li>Spring Boot, REST APIs, RPC</li>
+                <li>Java, TypeScript, Python, Scala, SQL</li>
+                <li>AWS Lambda, ECS, CDK, DynamoDB, AppSync</li>
+              </ul>
+            </div>
+            <div class="info-card">
+              <h3>Engineering practices</h3>
+              <ul>
+                <li>System design and observability</li>
+                <li>CI/CD, on-call operations, mentoring</li>
+                <li>Distributed systems and fault tolerance</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt" id="skills">
+        <div class="container">
+          <p class="section-label">Skills</p>
+          <h2>Technical capabilities</h2>
+          <div class="skills-grid">
+            <article class="skill-card">
+              <h3>Frameworks</h3>
+              <p>Spring Boot, REST APIs, RPC, AppSync</p>
+            </article>
+            <article class="skill-card">
+              <h3>Languages</h3>
+              <p>Java, TypeScript, Python, Scala, SQL</p>
+            </article>
+            <article class="skill-card">
+              <h3>Cloud & infrastructure</h3>
+              <p>AWS Lambda, ECS, CDK, EC2, SQS, SNS, S3, DynamoDB, EventBridge, Glue, CloudWatch, IAM</p>
+            </article>
+            <article class="skill-card">
+              <h3>Engineering practices</h3>
+              <p>System design, CI/CD, observability, on-call operations, mentoring, fault tolerance</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt" id="experience">
+        <div class="container">
+          <p class="section-label">Experience</p>
+          <h2>Amazon.com Services LLC</h2>
+          <div class="cards-grid">
+            <article class="experience-card">
+              <h3>Senior Software Development Engineer (L5)</h3>
+              <span class="meta">Seattle, WA · Feb 2021 – Present</span>
+              <p>Led Alexa Shopping self-service platform and Amazon Compensation system expansions, enabling high-velocity launches, multi-tenant capabilities, and resilient operations.</p>
+              <ul>
+                <li>Orchestrated internationalization for IAI Shopping Assistant Rufus, enabling launch across 4 markets and improving PR review turnaround by 67% while sustaining 99% uptime.</li>
+                <li>Designed Campaign Interruption & Feedback Filter logic and SQL ETL pipeline to reduce interruption rates by 33%, enabling 500K MAU evergreen campaign adoption.</li>
+                <li>Built Brand Entity Vending precompute pipeline with Spark and AWS S3, adding PITR and anomaly detection for reliable downstream DynamoDB ingestion.</li>
+                <li>Re-architected the compensation platform to support 2M employees, delivering configurable workflows and a zero-downtime backfill for 46M records.</li>
+                <li>Migrated shift differential API to Lambda, cutting P90 latency by 27% and reducing errors by 92%, saving $1.3M annually.</li>
+              </ul>
+            </article>
+            <article class="experience-card">
+              <h3>Software Development Engineer I</h3>
+              <span class="meta">Seattle, WA · Feb 2021 – Dec 2022</span>
+              <p>Delivered backend services and automation for Alexa Shopping, focusing on robust execution, scalability, and business-critical feature delivery.</p>
+              <p>Partnered with cross-functional teams to improve review coordination and sustain high availability for peak event readiness.</p>
+            </article>
+            <article class="experience-card">
+              <h3>Software Engineering Intern</h3>
+              <span class="meta">Seattle, WA · May 2020 – Aug 2020</span>
+              <p>Built a 1P Alexa shopping skill using AWS Lambda and Alexa Skills Kit (Java), enabling voice-driven product discovery, browsing, and purchase workflows.</p>
+              <p>Implemented NLU intent handling to translate spoken requests into shopping actions, delivering a functional prototype under tight timelines.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="projects">
+        <div class="container">
+          <p class="section-label">Projects</p>
+          <h2>Key projects</h2>
+          <div class="cards-grid">
+            <article class="project-card">
+              <h3>Self-Service Campaign Platform</h3>
+              <p>Built a greenfield campaign management portal used by 10+ teams to manage 20+ campaigns reaching 7M+ MAU. Automated campaign workflows and cut launch time from 3 days to 2 hours.</p>
+              <div class="project-footer">
+                <span>Java · TypeScript · AWS · DynamoDB</span>
+                <a href="#contact">Get in touch</a>
+              </div>
+            </article>
+            <article class="project-card">
+              <h3>IAI Shopping Assistant Rufus</h3>
+              <p>Led internationalization of the Orchestrator backend powering Rufus across 4 global markets. Scoped phased rollout timelines and added multilingual localization for reliable global behavior.</p>
+              <div class="project-footer">
+                <span>Java · AWS · Internationalization</span>
+                <a href="#contact">Learn more</a>
+              </div>
+            </article>
+            <article class="project-card">
+              <h3>Campaign Interruptions & Feedback Filter</h3>
+              <p>Designed exclusion cohort logic and productionized an ETL pipeline to filter high-risk Alexa campaign users, reducing interruption rates by 33% and enabling evergreen campaigns for 500K MAU.</p>
+              <div class="project-footer">
+                <span>SQL · AWS · BI collaboration</span>
+                <a href="#contact">Reach out</a>
+              </div>
+            </article>
+            <article class="project-card">
+              <h3>Brand Entity Vending Precompute</h3>
+              <p>Built a distributed Spark pipeline with AWS S3 to produce 3-hour brand catalog snapshots, plus automated anomaly detection and PITR for data correctness.</p>
+              <div class="project-footer">
+                <span>Spark · AWS S3 · DynamoDB</span>
+                <a href="#contact">Connect</a>
+              </div>
+            </article>
+            <article class="project-card">
+              <h3>Multi-Tenant Compensation Platform</h3>
+              <p>Re-architected a payroll compensation system for 2M employees with configurable business workflows, enabling faster onboarding and a zero-downtime backfill of 46M records.</p>
+              <div class="project-footer">
+                <span>Scala · AppSync · DynamoDB · CDK</span>
+                <a href="#contact">Let's connect</a>
+              </div>
+            </article>
+            <article class="project-card">
+              <h3>Shift Differential API Migration</h3>
+              <p>Migrated AppSync pipeline resolvers to serverless Lambda, cutting P90 latency by 27% and reducing calculation errors by 92%, saving $1.3M annually.</p>
+              <div class="project-footer">
+                <span>Python · Lambda · AppConfig · Observability</span>
+                <a href="#contact">Talk with me</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="education">
+        <div class="container">
+          <p class="section-label">Education</p>
+          <h2>Formal training</h2>
+          <div class="cards-grid">
+            <article class="experience-card">
+              <h3>Master of Computer Science</h3>
+              <span class="meta">North Carolina State University · Aug 2019 – Dec 2020</span>
+              <p>GPA: 4.0/4.0 — Focused on software engineering, distributed systems, and cloud-native architecture.</p>
+            </article>
+            <article class="experience-card">
+              <h3>Bachelor of Computer Science</h3>
+              <span class="meta">IIT Bhubaneswar · Jul 2015 – May 2019</span>
+              <p>GPA: 3.5/4.0 — Built a strong foundation in computer science, algorithms, and large-scale system design.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt" id="contact">
+        <div class="container contact-grid">
+          <div>
+            <p class="section-label">Contact</p>
+            <h2>Let's connect.</h2>
+            <p>Reach out for career opportunities, collaboration, or platform architecture discussions.</p>
+            <ul class="contact-list">
+              <li><strong>Email:</strong> <a href="mailto:himani.jangam.jobs@gmail.com">himani.jangam.jobs@gmail.com</a></li>
+              <li><strong>Location:</strong> Seattle, WA</li>
+              <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/himanijangam" target="_blank" rel="noreferrer">linkedin.com/in/himanijangam</a></li>
+              <li><strong>GitHub:</strong> <a href="https://github.com/Himani70" target="_blank" rel="noreferrer">github.com/Himani70</a></li>
+            </ul>
+          </div>
+          <form class="contact-card" action="mailto:himani.jangam.jobs@gmail.com" method="post" enctype="text/plain">
+            <label>
+              Name
+              <input type="text" name="name" placeholder="Your name" />
+            </label>
+            <label>
+              Email
+              <input type="email" name="email" placeholder="Your email" />
+            </label>
+            <label>
+              Message
+              <textarea name="message" rows="5" placeholder="Tell me about your project"></textarea>
+            </label>
+            <button class="button primary" type="submit">Send message</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <p>Built for your career showcase.</p>
+        <p>&copy; 2026 Himani Jangam</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
