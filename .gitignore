@@ -1,0 +1,6 @@
+# Local tooling — never publish
+.claude/
+.vscode/
+
+# Original referral copy stays local; the public download is assets/Himani_Jangam_Resume.pdf
+Resume_Himani_Referral.pdf

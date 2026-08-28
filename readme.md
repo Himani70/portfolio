@@ -1,35 +1,33 @@
-# Portfolio Website
+# Himani Jangam — Portfolio
 
-This repository contains a responsive portfolio website built with static HTML, CSS, and JavaScript.
+A recruiter-focused personal site for Himani Jangam, Senior Software Engineer (5+ years at Amazon, distributed systems on AWS). Static HTML/CSS/JS — no frameworks, no build step.
 
-## Files
+## Structure
 
-- `index.html` — main portfolio page
-- `styles.css` — layout and styling
-- `script.js` — mobile navigation toggle
-- `resume.html` — downloadable resume page
+- `index.html` — single-page portfolio: hero with availability badge, animated impact metrics, about + leadership highlights, Amazon experience, four case studies with expandable architecture deep dives, skills, education, and one-click contact
+- `styles.css` — design system (dark theme, Sora/Inter/JetBrains Mono, responsive, `prefers-reduced-motion` support)
+- `script.js` — mobile nav, scroll progress bar, scrollspy, reveal-on-scroll, animated counters, avatar fallback
+- `resume.html` — clean, print-optimized web résumé
+- `assets/Himani_Jangam_Resume.pdf` — downloadable PDF résumé (linked from the hero, nav, and contact sections)
+- `favicon.svg` — HJ monogram
 
-## Customize
-
-1. Update `index.html` with your name, roles, experience, projects, and contact links.
-2. Adjust colors and typography in `styles.css`.
-3. Open `index.html` in a browser to preview.
-
-## GitHub Hosting
-
-This repository includes a GitHub Actions workflow at `.github/workflows/pages.yml` to deploy the static site to the `gh-pages` branch after each push to `main`.
-
-To finish hosting:
-
-1. Push your changes to the `main` branch.
-2. Enable GitHub Pages in the repository settings and select the `gh-pages` branch as the publishing source.
-3. Your portfolio will be available at `https://Himani70.github.io/portfolio/` once GitHub Pages is active.
-
-## Local push script
-
-Run the following locally from this repo:
+## Preview locally
 
 ```bash
-chmod +x deploy.sh
-./deploy.sh
+python3 -m http.server 8000
+# open http://localhost:8000
 ```
+
+(Or just open `index.html` in a browser.)
+
+## Update content
+
+1. Text and metrics live directly in `index.html` — sections are marked with `<!-- ===== SECTION ===== -->` comments.
+2. Colors, fonts, and spacing are CSS variables at the top of `styles.css` (`:root`).
+3. Replacing the résumé: drop a new PDF at `assets/Himani_Jangam_Resume.pdf` and update `resume.html` to match.
+
+## Deploy (GitHub Pages)
+
+`.github/workflows/pages.yml` publishes the repo root to the `gh-pages` branch on every push to `main`. Enable GitHub Pages in the repo settings with `gh-pages` as the source; the site serves at `https://Himani70.github.io/portfolio/`.
+
+`deploy.sh` is a convenience script that commits and pushes everything to `main`.

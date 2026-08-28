@@ -3,51 +3,185 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Himani Jangam Resume</title>
+    <title>Himani Jangam — Résumé</title>
+    <meta name="description" content="Résumé of Himani Jangam, Senior Software Engineer — 5+ years at Amazon building distributed systems on AWS." />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
     <style>
-      body { font-family: Arial, sans-serif; line-height: 1.6; margin: 2rem; color: #111; }
-      h1, h2, h3 { margin: 0 0 0.75rem 0; }
-      .section { margin-bottom: 1.75rem; }
-      .meta { color: #555; margin-bottom: 1rem; display: block; }
-      ul { margin: 0.5rem 0 0 1.25rem; }
+      :root {
+        --ink: #14181f;
+        --muted: #4b5563;
+        --faint: #6b7280;
+        --accent: #4f46e5;
+        --rule: #e5e7eb;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        background: #f3f4f6;
+        color: var(--ink);
+        font: 15px/1.55 'Inter', system-ui, -apple-system, 'Segoe UI', Arial, sans-serif;
+      }
+      .toolbar {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.6rem;
+        justify-content: center;
+        padding: 1rem;
+      }
+      .toolbar a {
+        display: inline-block;
+        padding: 0.55rem 1.1rem;
+        border-radius: 999px;
+        font-size: 0.88rem;
+        font-weight: 600;
+        text-decoration: none;
+        border: 1px solid #d1d5db;
+        color: var(--ink);
+        background: #fff;
+      }
+      .toolbar a.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
+      .page {
+        max-width: 820px;
+        margin: 0 auto 3rem;
+        padding: 2.6rem 3rem;
+        background: #fff;
+        border: 1px solid var(--rule);
+        border-radius: 12px;
+        box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+      }
+      h1 { margin: 0; font-size: 1.9rem; letter-spacing: -0.02em; }
+      .contact { margin: 0.4rem 0 0; font-size: 0.9rem; color: var(--muted); }
+      .contact a { color: var(--accent); text-decoration: none; }
+      h2 {
+        margin: 1.9rem 0 0.7rem;
+        padding-bottom: 0.3rem;
+        border-bottom: 2px solid var(--ink);
+        font-size: 0.95rem;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+      }
+      h3 { margin: 1rem 0 0.1rem; font-size: 1.02rem; }
+      .role-line {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 0.25rem 1.5rem;
+        align-items: baseline;
+      }
+      .dates { font-size: 0.85rem; color: var(--faint); white-space: nowrap; }
+      .sub { margin: 0; font-size: 0.9rem; color: var(--muted); }
+      ul { margin: 0.45rem 0 0.9rem; padding-left: 1.2rem; }
+      li { margin-bottom: 0.35rem; }
+      li strong, p strong { font-weight: 600; }
+      .skills p { margin: 0.25rem 0; }
+      .skills strong { display: inline-block; min-width: 0; }
+      .edu-line { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 0.25rem 1.5rem; margin: 0.45rem 0; }
+      .edu-line p { margin: 0; }
+
+      @media (max-width: 640px) {
+        .page { padding: 1.8rem 1.4rem; border-radius: 0; }
+      }
+      @media print {
+        body { background: #fff; }
+        .toolbar { display: none; }
+        .page {
+          max-width: none;
+          margin: 0;
+          padding: 0;
+          border: 0;
+          border-radius: 0;
+          box-shadow: none;
+        }
+        a { color: inherit; text-decoration: none; }
+      }
     </style>
   </head>
   <body>
-    <h1>Himani Jangam</h1>
-    <p>himani.jangam.jobs@gmail.com | Seattle, WA | linkedin.com/in/himanijangam | github.com/Himani70</p>
-    <div class="section">
-      <h2>Summary</h2>
-      <p>Senior Software Engineer with 5+ years of experience architecting and scaling distributed systems, microservices, and event-driven architectures on AWS. Established platforms generating 7M+ MAU, accelerated campaign launches by 94%, performed zero-downtime backfills for 46M+ records, and built fault-tolerant systems reducing errors by 92%.</p>
-    </div>
-    <div class="section">
-      <h2>Technical Skills</h2>
-      <p>Frameworks: Spring Boot, REST APIs, RPC</p>
-      <p>Languages: Java, TypeScript, Python, Scala, SQL</p>
-      <p>Cloud Infrastructure: AWS (Lambda, ECS, CDK, EC2, SQS, SNS, S3, DynamoDB, AppSync, Glue, CloudWatch, IAM, EventBridge), Docker, Kafka, Redis, Kubernetes</p>
-      <p>Engineering Practices: System design, CI/CD, observability, on-call operations, mentoring</p>
-    </div>
-    <div class="section">
-      <h2>Experience</h2>
-      <h3>Amazon.com Services LLC</h3>
-      <p class="meta">Senior Software Development Engineer (L5) · Seattle, WA · Feb 2021 – Present</p>
-      <ul>
-        <li>Led greenfield campaign management portal adoption by 10+ teams for 20+ campaigns reaching 7M+ MAU.</li>
-        <li>Automated campaign workflows and reduced launch time from 3 days to 2 hours.</li>
-        <li>Designed OIDC auth and campaign-level authorization to cut permission turnaround from 24 hours to under 1 minute.</li>
-      </ul>
-      <p class="meta">Software Development Engineer I · Seattle, WA · Feb 2021 – Dec 2022</p>
-      <ul>
-        <li>Delivered backend services and automation for Alexa Shopping, focusing on scalability and high availability.</li>
-      </ul>
-      <p class="meta">Software Engineering Intern · Seattle, WA · May 2020 – Aug 2020</p>
-      <ul>
-        <li>Built a 1P Alexa Skill using AWS Lambda and Alexa Skills Kit (Java) to enable voice-driven shopping workflows.</li>
-      </ul>
-    </div>
-    <div class="section">
-      <h2>Education</h2>
-      <p class="meta">Master of Computer Science · North Carolina State University · Aug 2019 – Dec 2020 · GPA: 4.0/4.0</p>
-      <p class="meta">Bachelor of Computer Science · IIT Bhubaneswar · Jul 2015 – May 2019 · GPA: 3.5/4.0</p>
-    </div>
+    <nav class="toolbar" aria-label="Résumé actions">
+      <a class="primary" href="assets/Himani_Jangam_Resume.pdf" download>Download PDF</a>
+      <a href="javascript:window.print()">Print this page</a>
+      <a href="index.html">← Back to portfolio</a>
+    </nav>
+
+    <main class="page">
+      <header>
+        <h1>Himani Jangam</h1>
+        <p class="contact">
+          Seattle, WA · <a href="mailto:himani.jangam.jobs@gmail.com">himani.jangam.jobs@gmail.com</a> · 984-777-1057 ·
+          <a href="https://linkedin.com/in/himanijangam">linkedin.com/in/himanijangam</a> ·
+          <a href="https://github.com/Himani70">github.com/Himani70</a>
+        </p>
+      </header>
+
+      <section>
+        <h2>Summary</h2>
+        <p>
+          Senior Software Engineer with 5+ years of experience architecting and scaling distributed systems, highly
+          available microservices, and event-driven architectures on AWS. Orchestrated cross-team initiatives across
+          10+ teams for a Prime Day event, achieving <strong>99.9% uptime</strong>. Designed a platform serving
+          <strong>7M+ MAU</strong>, expedited campaign launches by <strong>94%</strong>, performed a zero-downtime
+          backfill of <strong>48M+ records</strong>, and built a fault-tolerant system reducing errors by
+          <strong>92%</strong> (<strong>$1.3M+ annual savings</strong>). Expertise in designing multi-tenant,
+          self-service platforms that drive velocity and scalability.
+        </p>
+      </section>
+
+      <section class="skills">
+        <h2>Technical Skills</h2>
+        <p><strong>Languages:</strong> Java, TypeScript, Python, Scala, SQL, C, C++, JavaScript, HTML/CSS</p>
+        <p><strong>Frameworks:</strong> Spring Boot, gRPC, REST APIs, Event-Driven Architecture, MySQL, NoSQL, PostgreSQL, Kafka, Redis</p>
+        <p><strong>Cloud Infrastructure:</strong> AWS (Lambda, ECS, CDK, EC2, SQS, SNS, S3, DynamoDB, AppSync, Glue, CloudWatch, IAM, EventBridge, AppConfig), Docker, Kubernetes, GraphQL</p>
+        <p><strong>Engineering Practices:</strong> System Design, CI/CD Pipelines, Observability (Tracing, Logging, Metrics), On-call Operations, Load Testing, Integration Testing, Canary Deployments, Mentoring, Code Reviews</p>
+      </section>
+
+      <section>
+        <h2>Work Experience</h2>
+        <div class="role-line">
+          <h3>Amazon.com Services LLC — Senior Software Development Engineer (L5)</h3>
+          <span class="dates">Feb 2021 – Apr 2026</span>
+        </div>
+        <p class="sub">Seattle, WA</p>
+
+        <p class="sub" style="margin-top: 0.8rem"><strong>Alexa Shopping — Self-Service Campaign Platform</strong></p>
+        <ul>
+          <li>Led design and development of a greenfield campaign management portal (Spring Boot, EC2), delivering backend CRUD APIs and frontend features. Adopted by <strong>10+ internal teams</strong> to manage 20+ campaigns reaching <strong>7M+ MAU</strong>.</li>
+          <li>Engineered API-driven automation eliminating manual cross-team coordination, accelerating campaign launch time by <strong>94%</strong> (3 days to 2 hours).</li>
+          <li>Developed OIDC authentication with DynamoDB-backed sessions and fine-grained authorization, enabling self-service access control and cutting permission turnaround from <strong>24 hours to &lt;1 minute</strong>.</li>
+        </ul>
+
+        <p class="sub"><strong>Amazon Compensation System — Global Expansion</strong></p>
+        <ul>
+          <li>Re-architected a single-tenant payroll compensation system to a multi-tenant platform, scaling from <strong>1M to 2M employees</strong>; onboarded 2 businesses (7 planned) in collaboration with BI and compensation teams.</li>
+          <li>Designed modular, workflow-driven components replacing a monolithic compensation processor, enabling configurable business-specific logic and cutting business onboarding time by <strong>70%</strong>.</li>
+          <li>Executed a zero-downtime backfill of <strong>48M DynamoDB production records</strong> using AWS Glue, achieving 100% data consistency via validation and reconciliation scripts.</li>
+        </ul>
+
+        <p class="sub"><strong>Alexa Shopping Prime Day — Org Lead &amp; Team Lead</strong></p>
+        <ul>
+          <li>Spearheaded a cross-functional scaling initiative, driving technical alignment across <strong>10 engineering teams</strong>, unblocking critical dependencies, and delivering 7 milestones for Amazon's Prime Day 2023.</li>
+          <li>Owned end-to-end peak readiness for <strong>6 Alexa Shopping microservices</strong>, achieving <strong>99.9% availability at 300 TPS</strong> peak load through capacity planning, load and stress testing, and coordinated dependency scaling.</li>
+          <li>Debugged deprecated scaling formulas, reducing EC2 over-provisioning by <strong>80%</strong> and saving $10K annually.</li>
+        </ul>
+
+        <p class="sub"><strong>Amazon Compensation System — Shift Differential API Migration</strong></p>
+        <ul>
+          <li>Migrated the AWS AppSync shift-differential API from pipeline resolvers to a serverless Lambda-based architecture, achieving a <strong>27% reduction in P50 latency</strong>.</li>
+          <li>Implemented a fault-tolerant fallback mechanism, reducing calculation errors by <strong>92%</strong> (4% to 0.3%) and saving <strong>$1.3M in annual compensation losses</strong>.</li>
+          <li>Drove a phased rollout with automatic rollback via AWS AppConfig feature flags, decoupling the data-source transition from business logic with zero service interruption.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Education</h2>
+        <div class="edu-line">
+          <p><strong>Master of Computer Science</strong> — North Carolina State University, NC, USA · GPA: 4.0/4.0</p>
+          <span class="dates">Aug 2019 – Dec 2020</span>
+        </div>
+        <div class="edu-line">
+          <p><strong>Bachelor of Computer Science</strong> — IIT Bhubaneswar, India · GPA: 3.5/4.0</p>
+          <span class="dates">Jul 2015 – May 2019</span>
+        </div>
+      </section>
+    </main>
   </body>
 </html>

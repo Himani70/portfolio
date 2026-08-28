@@ -3,273 +3,491 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HIMANI JANGAM | Portfolio</title>
+    <title>Himani Jangam · Senior Software Engineer</title>
+    <meta
+      name="description"
+      content="Himani Jangam — Senior Software Engineer with 5+ years at Amazon building distributed, event-driven systems on AWS. Platforms serving 7M+ MAU, zero-downtime migrations of 48M records, 99.9% availability at Prime Day peak."
+    />
+    <meta name="author" content="Himani Jangam" />
+    <meta name="theme-color" content="#06080f" />
+
+    <meta property="og:type" content="profile" />
+    <meta property="og:title" content="Himani Jangam · Senior Software Engineer" />
+    <meta
+      property="og:description"
+      content="5+ years at Amazon architecting distributed systems on AWS — 7M+ MAU platforms, $1.3M annual savings, 48M-record zero-downtime migrations, 99.9% availability at peak."
+    />
+    <meta property="og:image" content="https://avatars.githubusercontent.com/u/55857710?v=4" />
+
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Himani Jangam",
+        "jobTitle": "Senior Software Engineer",
+        "email": "mailto:himani.jangam.jobs@gmail.com",
+        "telephone": "+1-984-777-1057",
+        "address": { "@type": "PostalAddress", "addressLocality": "Seattle", "addressRegion": "WA" },
+        "alumniOf": [
+          { "@type": "CollegeOrUniversity", "name": "North Carolina State University" },
+          { "@type": "CollegeOrUniversity", "name": "Indian Institute of Technology Bhubaneswar" }
+        ],
+        "worksFor": { "@type": "Organization", "name": "Amazon" },
+        "sameAs": ["https://linkedin.com/in/himanijangam", "https://github.com/Himani70"]
+      }
+    </script>
   </head>
   <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="progress" id="progressBar" aria-hidden="true"></div>
+
     <header class="header">
       <div class="container header-inner">
-        <a class="brand" href="#home">HIMANI JANGAM</a>
-        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-        <nav class="nav" id="navMenu">
-          <a href="#home">Home</a>
+        <a class="brand" href="#top" aria-label="Himani Jangam — home">
+          <span class="brand-mark" aria-hidden="true">HJ</span>
+          <span class="brand-name">Himani Jangam</span>
+        </a>
+        <nav class="nav" id="navMenu" aria-label="Primary">
           <a href="#about">About</a>
-          <a href="#skills">Skills</a>
           <a href="#experience">Experience</a>
-          <a href="#projects">Projects</a>
+          <a href="#work">Case studies</a>
+          <a href="#skills">Skills</a>
           <a href="#education">Education</a>
           <a href="#contact">Contact</a>
+          <a class="nav-cta" href="assets/Himani_Jangam_Resume.pdf" download>Résumé</a>
         </nav>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navMenu">
+          <span></span><span></span><span></span>
+        </button>
       </div>
     </header>
 
-    <main>
-      <section class="hero" id="home">
+    <main id="main">
+      <!-- ============ HERO ============ -->
+      <section class="hero" id="top">
+        <div class="hero-backdrop" aria-hidden="true"></div>
         <div class="container hero-grid">
           <div class="hero-copy">
-            <p class="eyebrow">Senior Software Engineer</p>
-            <h1>Hi, I’m Himani Jangam.</h1>
-            <p class="hero-text">
-              I architect and scale distributed systems, microservices, and event-driven platforms on AWS. I build self-service, fault-tolerant platforms that reduce operational risk and accelerate global launches.
+            <p class="status-badge reveal"><span class="pulse-dot" aria-hidden="true"></span>Open to senior engineering roles</p>
+            <p class="eyebrow reveal" style="--d: 0.05s">Senior Software Engineer · Distributed Systems · AWS</p>
+            <h1 class="reveal" style="--d: 0.1s">
+              Himani <span class="grad-text">Jangam</span>
+            </h1>
+            <p class="hero-lede reveal" style="--d: 0.15s">
+              5+ years at <strong>Amazon</strong> designing event-driven, multi-tenant platforms — systems serving
+              <strong>7M+ monthly users</strong>, migrations of <strong>48M records with zero downtime</strong>, and
+              <strong>99.9% availability</strong> under Prime Day peak traffic.
             </p>
-            <div class="hero-actions">
-              <a class="button primary" href="#contact">Contact me</a>
-              <a class="button secondary" href="resume.html" download="HIMANI_JANGAM_Resume.html">Download resume</a>
+            <div class="hero-actions reveal" style="--d: 0.2s">
+              <a class="button primary" href="#work">See case studies</a>
+              <a class="button secondary" href="assets/Himani_Jangam_Resume.pdf" download>
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                Download résumé
+              </a>
             </div>
-          </div>
-          <div class="hero-card">
-            <img class="profile-photo" src="https://avatars.githubusercontent.com/u/55857710?v=4" alt="Himani Jangam" />
-            <div class="card-inner">
-              <h2>Key outcomes</h2>
-              <p>Established systems for 7M+ MAU, accelerated launches by 94%, and built resilient services that reduced errors by 92%.</p>
-              <div class="stats-grid">
-                <div>
-                  <strong>5+</strong>
-                  <span>Years experience</span>
-                </div>
-                <div>
-                  <strong>7M+</strong>
-                  <span>Monthly active users</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" id="about">
-        <div class="container section-grid">
-          <div>
-            <p class="section-label">About</p>
-            <h2>Senior software engineer focused on scalable AWS platforms.</h2>
-            <p>
-              Senior Software Engineer with 5+ years of experience architecting and scaling distributed systems, microservices, and event-driven architectures on AWS. I have led cross-team initiatives for large retail events and built self-service platforms that improve velocity and reliability.
-            </p>
-            <p>
-              I am passionate about building self-service systems, automating operations, and delivering resilient platforms that reduce manual effort and support rapid growth.
-            </p>
-          </div>
-          <div class="about-cards">
-            <div class="info-card">
-              <h3>Technical strengths</h3>
-              <ul>
-                <li>Spring Boot, REST APIs, RPC</li>
-                <li>Java, TypeScript, Python, Scala, SQL</li>
-                <li>AWS Lambda, ECS, CDK, DynamoDB, AppSync</li>
-              </ul>
-            </div>
-            <div class="info-card">
-              <h3>Engineering practices</h3>
-              <ul>
-                <li>System design and observability</li>
-                <li>CI/CD, on-call operations, mentoring</li>
-                <li>Distributed systems and fault tolerance</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section section-alt" id="skills">
-        <div class="container">
-          <p class="section-label">Skills</p>
-          <h2>Technical capabilities</h2>
-          <div class="skills-grid">
-            <article class="skill-card">
-              <h3>Frameworks</h3>
-              <p>Spring Boot, REST APIs, RPC, AppSync</p>
-            </article>
-            <article class="skill-card">
-              <h3>Languages</h3>
-              <p>Java, TypeScript, Python, Scala, SQL</p>
-            </article>
-            <article class="skill-card">
-              <h3>Cloud & infrastructure</h3>
-              <p>AWS Lambda, ECS, CDK, EC2, SQS, SNS, S3, DynamoDB, EventBridge, Glue, CloudWatch, IAM</p>
-            </article>
-            <article class="skill-card">
-              <h3>Engineering practices</h3>
-              <p>System design, CI/CD, observability, on-call operations, mentoring, fault tolerance</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section section-alt" id="experience">
-        <div class="container">
-          <p class="section-label">Experience</p>
-          <h2>Amazon.com Services LLC</h2>
-          <div class="cards-grid">
-            <article class="experience-card">
-              <h3>Senior Software Development Engineer (L5)</h3>
-              <span class="meta">Seattle, WA · Feb 2021 – Present</span>
-              <p>Led Alexa Shopping self-service platform and Amazon Compensation system expansions, enabling high-velocity launches, multi-tenant capabilities, and resilient operations.</p>
-              <ul>
-                <li>Orchestrated internationalization for IAI Shopping Assistant Rufus, enabling launch across 4 markets and improving PR review turnaround by 67% while sustaining 99% uptime.</li>
-                <li>Designed Campaign Interruption & Feedback Filter logic and SQL ETL pipeline to reduce interruption rates by 33%, enabling 500K MAU evergreen campaign adoption.</li>
-                <li>Built Brand Entity Vending precompute pipeline with Spark and AWS S3, adding PITR and anomaly detection for reliable downstream DynamoDB ingestion.</li>
-                <li>Re-architected the compensation platform to support 2M employees, delivering configurable workflows and a zero-downtime backfill for 46M records.</li>
-                <li>Migrated shift differential API to Lambda, cutting P90 latency by 27% and reducing errors by 92%, saving $1.3M annually.</li>
-              </ul>
-            </article>
-            <article class="experience-card">
-              <h3>Software Development Engineer I</h3>
-              <span class="meta">Seattle, WA · Feb 2021 – Dec 2022</span>
-              <p>Delivered backend services and automation for Alexa Shopping, focusing on robust execution, scalability, and business-critical feature delivery.</p>
-              <p>Partnered with cross-functional teams to improve review coordination and sustain high availability for peak event readiness.</p>
-            </article>
-            <article class="experience-card">
-              <h3>Software Engineering Intern</h3>
-              <span class="meta">Seattle, WA · May 2020 – Aug 2020</span>
-              <p>Built a 1P Alexa shopping skill using AWS Lambda and Alexa Skills Kit (Java), enabling voice-driven product discovery, browsing, and purchase workflows.</p>
-              <p>Implemented NLU intent handling to translate spoken requests into shopping actions, delivering a functional prototype under tight timelines.</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" id="projects">
-        <div class="container">
-          <p class="section-label">Projects</p>
-          <h2>Key projects</h2>
-          <div class="cards-grid">
-            <article class="project-card">
-              <h3>Self-Service Campaign Platform</h3>
-              <p>Built a greenfield campaign management portal used by 10+ teams to manage 20+ campaigns reaching 7M+ MAU. Automated campaign workflows and cut launch time from 3 days to 2 hours.</p>
-              <div class="project-footer">
-                <span>Java · TypeScript · AWS · DynamoDB</span>
-                <a href="#contact">Get in touch</a>
-              </div>
-            </article>
-            <article class="project-card">
-              <h3>IAI Shopping Assistant Rufus</h3>
-              <p>Led internationalization of the Orchestrator backend powering Rufus across 4 global markets. Scoped phased rollout timelines and added multilingual localization for reliable global behavior.</p>
-              <div class="project-footer">
-                <span>Java · AWS · Internationalization</span>
-                <a href="#contact">Learn more</a>
-              </div>
-            </article>
-            <article class="project-card">
-              <h3>Campaign Interruptions & Feedback Filter</h3>
-              <p>Designed exclusion cohort logic and productionized an ETL pipeline to filter high-risk Alexa campaign users, reducing interruption rates by 33% and enabling evergreen campaigns for 500K MAU.</p>
-              <div class="project-footer">
-                <span>SQL · AWS · BI collaboration</span>
-                <a href="#contact">Reach out</a>
-              </div>
-            </article>
-            <article class="project-card">
-              <h3>Brand Entity Vending Precompute</h3>
-              <p>Built a distributed Spark pipeline with AWS S3 to produce 3-hour brand catalog snapshots, plus automated anomaly detection and PITR for data correctness.</p>
-              <div class="project-footer">
-                <span>Spark · AWS S3 · DynamoDB</span>
-                <a href="#contact">Connect</a>
-              </div>
-            </article>
-            <article class="project-card">
-              <h3>Multi-Tenant Compensation Platform</h3>
-              <p>Re-architected a payroll compensation system for 2M employees with configurable business workflows, enabling faster onboarding and a zero-downtime backfill of 46M records.</p>
-              <div class="project-footer">
-                <span>Scala · AppSync · DynamoDB · CDK</span>
-                <a href="#contact">Let's connect</a>
-              </div>
-            </article>
-            <article class="project-card">
-              <h3>Shift Differential API Migration</h3>
-              <p>Migrated AppSync pipeline resolvers to serverless Lambda, cutting P90 latency by 27% and reducing calculation errors by 92%, saving $1.3M annually.</p>
-              <div class="project-footer">
-                <span>Python · Lambda · AppConfig · Observability</span>
-                <a href="#contact">Talk with me</a>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" id="education">
-        <div class="container">
-          <p class="section-label">Education</p>
-          <h2>Formal training</h2>
-          <div class="cards-grid">
-            <article class="experience-card">
-              <h3>Master of Computer Science</h3>
-              <span class="meta">North Carolina State University · Aug 2019 – Dec 2020</span>
-              <p>GPA: 4.0/4.0 — Focused on software engineering, distributed systems, and cloud-native architecture.</p>
-            </article>
-            <article class="experience-card">
-              <h3>Bachelor of Computer Science</h3>
-              <span class="meta">IIT Bhubaneswar · Jul 2015 – May 2019</span>
-              <p>GPA: 3.5/4.0 — Built a strong foundation in computer science, algorithms, and large-scale system design.</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section section-alt" id="contact">
-        <div class="container contact-grid">
-          <div>
-            <p class="section-label">Contact</p>
-            <h2>Let's connect.</h2>
-            <p>Reach out for career opportunities, collaboration, or platform architecture discussions.</p>
-            <ul class="contact-list">
-              <li><strong>Email:</strong> <a href="mailto:himani.jangam.jobs@gmail.com">himani.jangam.jobs@gmail.com</a></li>
-              <li><strong>Location:</strong> Seattle, WA</li>
-              <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/himanijangam" target="_blank" rel="noreferrer">linkedin.com/in/himanijangam</a></li>
-              <li><strong>GitHub:</strong> <a href="https://github.com/Himani70" target="_blank" rel="noreferrer">github.com/Himani70</a></li>
+            <ul class="hero-links reveal" style="--d: 0.25s">
+              <li>
+                <a href="mailto:himani.jangam.jobs@gmail.com">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+                  Email
+                </a>
+              </li>
+              <li>
+                <a href="https://linkedin.com/in/himanijangam" target="_blank" rel="noreferrer">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+                  LinkedIn
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/Himani70" target="_blank" rel="noreferrer">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.86 10.91c.58.11.79-.25.79-.55v-2.17c-3.2.7-3.87-1.36-3.87-1.36-.53-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.26.72-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.25.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.05 11.05 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.12 3.05.74.81 1.18 1.84 1.18 3.09 0 4.42-2.69 5.39-5.26 5.68.41.35.78 1.05.78 2.12v3.14c0 .3.2.67.8.55A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5z"/></svg>
+                  GitHub
+                </a>
+              </li>
+              <li>
+                <a href="tel:+19847771057">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.58 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                  984-777-1057
+                </a>
+              </li>
             </ul>
           </div>
-          <form class="contact-card" action="mailto:himani.jangam.jobs@gmail.com" method="post" enctype="text/plain">
-            <label>
-              Name
-              <input type="text" name="name" placeholder="Your name" />
-            </label>
-            <label>
-              Email
-              <input type="email" name="email" placeholder="Your email" />
-            </label>
-            <label>
-              Message
-              <textarea name="message" rows="5" placeholder="Tell me about your project"></textarea>
-            </label>
-            <button class="button primary" type="submit">Send message</button>
-          </form>
+
+          <aside class="hero-card reveal" style="--d: 0.2s" aria-label="Profile summary">
+            <div class="avatar-wrap">
+              <img
+                class="profile-photo"
+                id="profilePhoto"
+                src="https://avatars.githubusercontent.com/u/55857710?v=4"
+                alt="Portrait of Himani Jangam"
+                width="112"
+                height="112"
+              />
+              <div class="avatar-fallback" id="avatarFallback" aria-hidden="true">HJ</div>
+            </div>
+            <div class="hero-card-id">
+              <h2>Himani Jangam</h2>
+              <p>Senior Software Development Engineer</p>
+              <p class="hero-card-loc">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                Seattle, WA
+              </p>
+            </div>
+            <ul class="hero-card-facts">
+              <li>
+                <span class="fact-key">Amazon</span>
+                <span class="fact-val">Senior SDE (L5) · Feb 2021 – Apr 2026</span>
+              </li>
+              <li>
+                <span class="fact-key">Focus</span>
+                <span class="fact-val">Event-driven &amp; multi-tenant platforms on AWS</span>
+              </li>
+              <li>
+                <span class="fact-key">Education</span>
+                <span class="fact-val">M.S. Computer Science, NC State — 4.0 GPA</span>
+              </li>
+              <li>
+                <span class="fact-key">Leadership</span>
+                <span class="fact-val">Prime Day org lead across 10 engineering teams</span>
+              </li>
+            </ul>
+          </aside>
+        </div>
+
+        <div class="container">
+          <dl class="impact-strip reveal" aria-label="Career impact at a glance">
+            <div class="impact-tile">
+              <dt>Monthly active users</dt>
+              <dd><span class="counter" data-count="7" data-suffix="M+">0</span></dd>
+              <p>reached by the campaign platform I designed</p>
+            </div>
+            <div class="impact-tile">
+              <dt>Saved annually</dt>
+              <dd><span class="counter" data-count="1.3" data-prefix="$" data-suffix="M" data-decimals="1">0</span></dd>
+              <p>by a fault-tolerant compensation API redesign</p>
+            </div>
+            <div class="impact-tile">
+              <dt>Records migrated</dt>
+              <dd><span class="counter" data-count="48" data-suffix="M">0</span></dd>
+              <p>zero downtime, 100% verified consistency</p>
+            </div>
+            <div class="impact-tile">
+              <dt>Peak availability</dt>
+              <dd><span class="counter" data-count="99.9" data-suffix="%" data-decimals="1">0</span></dd>
+              <p>at 300 TPS during Amazon Prime Day</p>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      <!-- ============ ABOUT ============ -->
+      <section class="section" id="about">
+        <div class="container">
+          <p class="section-label reveal">01 · About</p>
+          <div class="section-grid">
+            <div class="reveal" style="--d: 0.05s">
+              <h2>Engineer who owns systems end to end — from design review to 3&nbsp;a.m. pager.</h2>
+              <p>
+                I spent 5+ years at Amazon on the Alexa Shopping and Compensation teams, with end-to-end ownership across
+                the full development lifecycle: architecture, delivery, operations, and scale. My work centers on
+                event-driven and multi-tenant architectures — the kind of platform engineering that lets ten other teams
+                move faster without filing a ticket.
+              </p>
+              <p>
+                I hold an M.S. in Computer Science from North Carolina State University (4.0 GPA) and a bachelor's in
+                Computer Science from IIT Bhubaneswar. I'm now looking for my next opportunity: a senior role with real
+                ownership and direct impact on users.
+              </p>
+            </div>
+            <div class="about-cards">
+              <article class="info-card reveal" style="--d: 0.1s">
+                <h3>Org-scale coordination</h3>
+                <p>Central readiness lead for Amazon Prime Day across 10 engineering teams — weekly syncs, dependency escalations, 7 milestones delivered.</p>
+              </article>
+              <article class="info-card reveal" style="--d: 0.15s">
+                <h3>Technical leadership</h3>
+                <p>Led 7 engineers across two orgs for a 5-market internationalization launch; primary reviewer holding external contributions to quality, performance, and security bars.</p>
+              </article>
+              <article class="info-card reveal" style="--d: 0.2s">
+                <h3>Operational rigor</h3>
+                <p>Capacity planning, load and stress testing, gamedays, operational readiness reviews, on-call — and the mentoring and code-review culture that keeps it sustainable.</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ EXPERIENCE ============ -->
+      <section class="section section-alt" id="experience">
+        <div class="container">
+          <p class="section-label reveal">02 · Experience</p>
+          <h2 class="reveal" style="--d: 0.05s">Five years shipping at Amazon scale.</h2>
+
+          <article class="xp-card reveal" style="--d: 0.1s">
+            <header class="xp-head">
+              <div>
+                <h3>Senior Software Development Engineer (L5)</h3>
+                <p class="xp-org">Amazon.com Services LLC · Seattle, WA</p>
+              </div>
+              <p class="xp-dates">Feb 2021 — Apr 2026</p>
+            </header>
+
+            <div class="xp-teams">
+              <div class="xp-team">
+                <h4><span class="team-dot" aria-hidden="true"></span>Alexa Shopping</h4>
+                <ul>
+                  <li>Led design and delivery of a <strong>greenfield self-service campaign portal</strong> (Spring Boot on ECS) — adopted by <strong>10+ internal teams</strong> to run 20+ campaigns reaching <strong>7M+ monthly active users</strong>.</li>
+                  <li>Automated cross-team launch coordination behind APIs, cutting campaign launch time <strong>94%</strong> — from 3 days to under 2 hours.</li>
+                  <li>Built OIDC authentication with DynamoDB-backed sessions and fine-grained, resource-level authorization — permission turnaround dropped from <strong>24 hours to under a minute</strong>.</li>
+                  <li>Org and team lead for <strong>Prime Day 2023</strong>: aligned 10 engineering teams on 7 readiness milestones; my team's 6 microservices held <strong>99.9% availability at 300 TPS</strong> peak.</li>
+                  <li>Led internationalization of the conversational-shopping orchestrator behind <strong>Amazon Rufus</strong>, enabling expansion across 5 global markets with a 7-engineer cross-org team.</li>
+                </ul>
+              </div>
+              <div class="xp-team">
+                <h4><span class="team-dot alt" aria-hidden="true"></span>Amazon Compensation</h4>
+                <ul>
+                  <li>Re-architected a single-tenant payroll compensation system into a <strong>multi-tenant platform</strong>, scaling from 1M to <strong>2M employees</strong> and cutting business onboarding time <strong>70%</strong>.</li>
+                  <li>Executed a <strong>zero-downtime backfill of 48M DynamoDB records</strong> with AWS Glue — 100% consistency proven by validation and reconciliation scripts.</li>
+                  <li>Redesigned the shift-differential API with a fault-tolerant fallback and Lambda migration: errors down <strong>92%</strong> (4% → 0.3%), <strong>$1.3M saved annually</strong>, P50 latency down 27%.</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- ============ CASE STUDIES ============ -->
+      <section class="section" id="work">
+        <div class="container">
+          <p class="section-label reveal">03 · Case studies</p>
+          <h2 class="reveal" style="--d: 0.05s">Selected work, with the architecture behind it.</h2>
+          <p class="section-sub reveal" style="--d: 0.1s">
+            Impact up front; expand any study for the system design underneath.
+          </p>
+
+          <div class="case-list">
+            <article class="case-card reveal">
+              <p class="case-kicker">Alexa Shopping · Platform engineering</p>
+              <h3>Self-Service Campaign Platform</h3>
+              <p class="case-summary">
+                Every Alexa proactive-notification campaign used to need engineers in the loop — a 3-day,
+                multi-team process. I led the design and build of a greenfield portal that made it a 2-hour
+                self-service flow, now used by 10+ teams across multiple notification channels.
+              </p>
+              <div class="stat-chips">
+                <span class="stat-chip"><strong>94%</strong> faster launches</span>
+                <span class="stat-chip"><strong>7M+</strong> MAU reached</span>
+                <span class="stat-chip"><strong>24h → &lt;1 min</strong> access grants</span>
+              </div>
+              <details class="deep-dive">
+                <summary>Architecture deep dive</summary>
+                <ul>
+                  <li>Spring Boot service on ECS Fargate acts as the orchestration layer between the portal UI and downstream notification systems, supporting multiple delivery channels (device notifications, shopping hints, ambient home cards).</li>
+                  <li>Event-driven fan-out: audience-segment updates land on a segments queue (SQS); a producer task expands each segment into per-customer messages on a notifications queue; consumer tasks build payloads and invoke downstream delivery APIs. Each stage scales horizontally and fails independently.</li>
+                  <li>OIDC authentication through an internal identity broker, enforced by a servlet security filter with DynamoDB-backed sessions.</li>
+                  <li>Campaigns modeled as first-class resources in a centralized entitlement system — per-campaign view / update / test / execute / delete permissions, granted self-service with no manual approvals.</li>
+                </ul>
+              </details>
+              <p class="tech-tags"><span>Java</span><span>Spring Boot</span><span>ECS Fargate</span><span>SQS</span><span>DynamoDB</span><span>OIDC</span></p>
+            </article>
+
+            <article class="case-card reveal">
+              <p class="case-kicker">Amazon Compensation · Architecture</p>
+              <h3>Multi-Tenant Compensation Platform</h3>
+              <p class="case-summary">
+                Amazon's step-plan compensation system was built for exactly one business. I re-architected it
+                into a multi-tenant platform — tenant identity end to end, configurable workflow components in
+                place of a monolithic processor — scaling from 1M to 2M employees with 2 business units onboarded
+                and 7 planned.
+              </p>
+              <div class="stat-chips">
+                <span class="stat-chip"><strong>48M</strong> records, zero downtime</span>
+                <span class="stat-chip"><strong>1M → 2M</strong> employees</span>
+                <span class="stat-chip"><strong>−70%</strong> onboarding time</span>
+              </div>
+              <details class="deep-dive">
+                <summary>Architecture deep dive</summary>
+                <ul>
+                  <li>Introduced a business identifier through every service, table, and event in the platform, giving each tenant isolation plus configuration-driven business logic.</li>
+                  <li>Replaced a monolithic if/else processor with Strategy-pattern processors per workflow — wage change, tenure progression, audit — selected at runtime; each is independently testable and extensible.</li>
+                  <li>Zero-downtime backfill of 48M DynamoDB production records using AWS Glue, with validation and reconciliation scripts proving 100% data consistency.</li>
+                  <li>Partnered with BI and compensation teams to onboard the first 2 business units of 7 planned.</li>
+                </ul>
+              </details>
+              <p class="tech-tags"><span>DynamoDB</span><span>AWS Glue</span><span>Strategy Pattern</span><span>Multi-tenant design</span><span>Event-driven</span></p>
+            </article>
+
+            <article class="case-card reveal">
+              <p class="case-kicker">Amazon Compensation · Reliability</p>
+              <h3>Shift-Differential API — Fault-Tolerant Redesign</h3>
+              <p class="case-summary">
+                The API computing employee shift premiums depended on precomputed pattern combinations — and
+                missing combinations meant empty responses. Roughly 4% of calculations were wrong, with direct
+                payroll impact. I redesigned it around a multi-stage fallback and a serverless migration.
+              </p>
+              <div class="stat-chips">
+                <span class="stat-chip"><strong>4% → 0.3%</strong> error rate</span>
+                <span class="stat-chip"><strong>$1.3M</strong> saved per year</span>
+                <span class="stat-chip"><strong>−27%</strong> P50 latency</span>
+              </div>
+              <details class="deep-dive">
+                <summary>Architecture deep dive</summary>
+                <ul>
+                  <li>Multi-stage lookup: when the primary precomputed DynamoDB lookup misses, the system derives the shift-differential value dynamically from secondary lookup tables instead of returning empty.</li>
+                  <li>Migrated the AppSync API from pipeline resolvers to a Lambda-based architecture after a proof-of-concept tradeoff evaluation — the better fit for complex orchestration logic and future extensibility.</li>
+                  <li>Phased rollout behind AWS AppConfig feature flags with automatic rollback, decoupling the data-source transition from business logic — zero service interruption during migration.</li>
+                </ul>
+              </details>
+              <p class="tech-tags"><span>AWS Lambda</span><span>AppSync</span><span>GraphQL</span><span>DynamoDB</span><span>AppConfig</span></p>
+            </article>
+
+            <article class="case-card reveal">
+              <p class="case-kicker">Alexa Shopping · Scale &amp; leadership</p>
+              <h3>Prime Day — Org-Wide Peak Readiness</h3>
+              <p class="case-summary">
+                For Prime Day 2023 I wore two hats: central readiness coordinator across 10 engineering teams,
+                and owner of my own team's readiness for 6 microservices. Every org milestone landed, and our
+                services held 99.9% availability through peak.
+              </p>
+              <div class="stat-chips">
+                <span class="stat-chip"><strong>10</strong> teams aligned</span>
+                <span class="stat-chip"><strong>99.9%</strong> at 300 TPS</span>
+                <span class="stat-chip"><strong>−80%</strong> EC2 over-provisioning</span>
+              </div>
+              <details class="deep-dive">
+                <summary>How it ran</summary>
+                <ul>
+                  <li>Ran weekly readiness syncs with designated POCs from each of 10 teams — tracking milestones, communicating operational requirements, unblocking dependencies, and keeping leadership sighted on risk.</li>
+                  <li>Caught a missed downstream traffic projection late in the cycle and drove emergency scaling approval through the peak-readiness lead and org director — removing a genuine Prime Day availability risk.</li>
+                  <li>Owned my team's end-to-end readiness: capacity planning, hardware ordering, load and stress testing, operational readiness reviews, and gamedays across 6 microservices.</li>
+                  <li>Found deprecated scaling formulas silently over-provisioning EC2; corrected the configuration to cut excess capacity ~80% (~$10K/yr) and proposed the deadline-separation process fix adopted for future readiness cycles.</li>
+                </ul>
+              </details>
+              <p class="tech-tags"><span>EC2</span><span>Auto Scaling</span><span>Load testing</span><span>CloudWatch</span><span>Capacity planning</span></p>
+            </article>
+          </div>
+
+          <h3 class="more-work-title reveal">More projects</h3>
+          <div class="mini-case-grid">
+            <article class="mini-case reveal">
+              <p class="case-kicker">Alexa Shopping · Globalization</p>
+              <h4>Rufus Orchestrator — Internationalization</h4>
+              <p>
+                Led i18n of the core service orchestrator behind Amazon's conversational shopping assistant,
+                enabling expansion to 5 global markets. Authored the technical impact analysis, led execution
+                across 7 engineers (core + external infrastructure), and served as primary reviewer for external
+                contributions.
+              </p>
+              <p class="tech-tags"><span>Java</span><span>Microservices</span><span>i18n</span><span>Cross-org leadership</span></p>
+            </article>
+            <article class="mini-case reveal" style="--d: 0.08s">
+              <p class="case-kicker">Alexa Shopping · Data platform</p>
+              <h4>Brand Entity Vending — Precompute Pipeline</h4>
+              <p>
+                Built the precompute module turning daily brand-catalog snapshots into a clean canonical dataset
+                plus per-run deltas (created / updated / deleted) for downstream indexers — with field-level
+                validation and anomaly detection that block bad data before it propagates, and CloudWatch
+                dashboards for per-entity metrics.
+              </p>
+              <p class="tech-tags"><span>Data pipelines</span><span>S3</span><span>DynamoDB</span><span>CloudWatch</span></p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ SKILLS ============ -->
+      <section class="section section-alt" id="skills">
+        <div class="container">
+          <p class="section-label reveal">04 · Skills</p>
+          <h2 class="reveal" style="--d: 0.05s">Tools I reach for.</h2>
+          <div class="skills-grid">
+            <article class="skill-group reveal">
+              <h3>Languages</h3>
+              <p class="chips">
+                <span>Java</span><span>Python</span><span>TypeScript</span><span>JavaScript</span><span>Scala</span><span>SQL</span><span>C / C++</span><span>HTML / CSS</span>
+              </p>
+            </article>
+            <article class="skill-group reveal" style="--d: 0.05s">
+              <h3>Backend &amp; data</h3>
+              <p class="chips">
+                <span>Spring Boot</span><span>gRPC</span><span>REST APIs</span><span>GraphQL</span><span>Event-driven architecture</span><span>Kafka</span><span>Redis</span><span>MySQL</span><span>PostgreSQL</span><span>NoSQL</span>
+              </p>
+            </article>
+            <article class="skill-group reveal" style="--d: 0.1s">
+              <h3>Cloud &amp; infrastructure</h3>
+              <p class="chips">
+                <span>AWS Lambda</span><span>ECS Fargate</span><span>DynamoDB</span><span>SQS / SNS</span><span>EC2</span><span>S3</span><span>AppSync</span><span>AWS Glue</span><span>EventBridge</span><span>AppConfig</span><span>CloudWatch</span><span>IAM</span><span>CDK</span><span>Docker</span><span>Kubernetes</span>
+              </p>
+            </article>
+            <article class="skill-group reveal" style="--d: 0.15s">
+              <h3>Engineering practices</h3>
+              <p class="chips">
+                <span>System design</span><span>Multi-tenant architecture</span><span>CI/CD pipelines</span><span>Observability</span><span>Canary deployments</span><span>Load testing</span><span>Integration testing</span><span>On-call operations</span><span>Mentoring</span><span>Code review</span>
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ EDUCATION ============ -->
+      <section class="section" id="education">
+        <div class="container">
+          <p class="section-label reveal">05 · Education</p>
+          <h2 class="reveal" style="--d: 0.05s">Education</h2>
+          <div class="edu-grid">
+            <article class="edu-card reveal">
+              <span class="gpa-badge">4.0 / 4.0 GPA</span>
+              <h3>M.S. Computer Science</h3>
+              <p class="edu-school">North Carolina State University · Raleigh, NC</p>
+              <p class="edu-dates">Aug 2019 — Dec 2020</p>
+            </article>
+            <article class="edu-card reveal" style="--d: 0.08s">
+              <span class="gpa-badge subtle">3.5 / 4.0 GPA</span>
+              <h3>B.Tech. Computer Science</h3>
+              <p class="edu-school">Indian Institute of Technology (IIT) Bhubaneswar, India</p>
+              <p class="edu-dates">Jul 2015 — May 2019</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ CONTACT ============ -->
+      <section class="section section-alt" id="contact">
+        <div class="container contact-wrap">
+          <p class="section-label reveal">06 · Contact</p>
+          <h2 class="reveal" style="--d: 0.05s">Hiring for a senior engineer<br />who owns outcomes?</h2>
+          <p class="contact-lede reveal" style="--d: 0.1s">
+            I'm looking for my next opportunity — a senior role with real ownership and direct impact on users.
+            If that sounds like your team, let's talk. Based in Seattle, WA.
+          </p>
+          <div class="contact-actions reveal" style="--d: 0.15s">
+            <a class="button primary" href="mailto:himani.jangam.jobs@gmail.com">himani.jangam.jobs@gmail.com</a>
+            <a class="button secondary" href="https://linkedin.com/in/himanijangam" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a class="button secondary" href="https://github.com/Himani70" target="_blank" rel="noreferrer">GitHub</a>
+            <a class="button secondary" href="tel:+19847771057">984-777-1057</a>
+          </div>
+          <p class="contact-alt reveal" style="--d: 0.2s">
+            Prefer paper? <a href="assets/Himani_Jangam_Resume.pdf" download>Download the PDF résumé</a> or
+            <a href="resume.html">view it on the web</a>.
+          </p>
         </div>
       </section>
     </main>
 
     <footer class="footer">
       <div class="container footer-inner">
-        <p>Built for your career showcase.</p>
-        <p>&copy; 2026 Himani Jangam</p>
+        <p>© <span id="year">2026</span> Himani Jangam · Seattle, WA</p>
+        <p class="footer-note">Hand-built with vanilla HTML, CSS &amp; JavaScript.</p>
+        <a class="to-top" href="#top">Back to top ↑</a>
       </div>
     </footer>
 
