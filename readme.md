@@ -4,9 +4,9 @@ A recruiter-focused personal site for Himani Jangam, Senior Software Engineer (5
 
 ## Structure
 
-- `index.html` — single-page portfolio: hero with availability badge, animated impact metrics, about + leadership highlights, Amazon experience, four case studies with expandable architecture deep dives, skills, education, and one-click contact
-- `styles.css` — design system (dark theme, Sora/Inter/JetBrains Mono, responsive, `prefers-reduced-motion` support)
-- `script.js` — mobile nav, scroll progress bar, scrollspy, reveal-on-scroll, animated counters, avatar fallback
+- `index.html` — split-screen portfolio: sticky identity sidebar (name, availability badge, numbered nav, contact links) beside a scrolling content column with about + leadership highlights, animated impact metrics, Amazon experience, four case studies with expandable architecture deep dives, skills, education, and one-click contact
+- `styles.css` — design system (light theme, Space Grotesk/Inter/JetBrains Mono, indigo–teal accents, responsive, `prefers-reduced-motion` support)
+- `script.js` — scroll progress bar, sidebar scrollspy, reveal-on-scroll, animated counters, avatar fallback
 - `resume.html` — clean, print-optimized web résumé
 - `assets/Himani_Jangam_Resume.pdf` — downloadable PDF résumé (linked from the hero, nav, and contact sections)
 - `favicon.svg` — HJ monogram

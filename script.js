@@ -4,31 +4,6 @@
 
   const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-  /* ---------- Mobile navigation ---------- */
-  const navToggle = document.getElementById('navToggle');
-  const navMenu = document.getElementById('navMenu');
-
-  if (navToggle && navMenu) {
-    navToggle.addEventListener('click', () => {
-      const open = navMenu.classList.toggle('open');
-      navToggle.setAttribute('aria-expanded', String(open));
-    });
-
-    navMenu.addEventListener('click', (event) => {
-      if (event.target.closest('a')) {
-        navMenu.classList.remove('open');
-        navToggle.setAttribute('aria-expanded', 'false');
-      }
-    });
-
-    window.addEventListener('resize', () => {
-      if (window.innerWidth > 760) {
-        navMenu.classList.remove('open');
-        navToggle.setAttribute('aria-expanded', 'false');
-      }
-    });
-  }
-
   /* ---------- Scroll progress bar ---------- */
   const progressBar = document.getElementById('progressBar');
   if (progressBar) {
@@ -41,9 +16,9 @@
     updateProgress();
   }
 
-  /* ---------- Scrollspy: highlight nav link for section in view ---------- */
+  /* ---------- Scrollspy: highlight sidebar link for section in view ---------- */
   const sections = document.querySelectorAll('main section[id]');
-  const navLinks = document.querySelectorAll('.nav a[href^="#"]');
+  const navLinks = document.querySelectorAll('.side-nav a[href^="#"]');
 
   if (sections.length && navLinks.length && 'IntersectionObserver' in window) {
     const linkFor = {};
@@ -62,7 +37,7 @@
           }
         });
       },
-      { rootMargin: '-40% 0px -55% 0px' }
+      { rootMargin: '-30% 0px -60% 0px' }
     );
     sections.forEach((section) => spy.observe(section));
   }
