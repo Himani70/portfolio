@@ -35,7 +35,6 @@
         "name": "Himani Jangam",
         "jobTitle": "Senior Software Engineer",
         "email": "mailto:himani.jangam.jobs@gmail.com",
-        "telephone": "+1-984-777-1057",
         "address": { "@type": "PostalAddress", "addressLocality": "Seattle", "addressRegion": "WA" },
         "alumniOf": [
           { "@type": "CollegeOrUniversity", "name": "North Carolina State University" },
@@ -49,143 +48,181 @@
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
     <div class="progress" id="progressBar" aria-hidden="true"></div>
-    <div class="page-glow" aria-hidden="true"></div>
 
-    <div class="layout">
-      <!-- ============ SIDEBAR ============ -->
-      <header class="sidebar">
-        <div class="sidebar-inner">
-          <div class="avatar-wrap">
-            <img
-              class="profile-photo"
-              id="profilePhoto"
-              src="https://avatars.githubusercontent.com/u/55857710?v=4"
-              alt="Portrait of Himani Jangam"
-              width="84"
-              height="84"
-            />
-            <div class="avatar-fallback" id="avatarFallback" aria-hidden="true">HJ</div>
+    <header class="header">
+      <div class="container header-inner">
+        <a class="brand" href="#top" aria-label="Himani Jangam — home">
+          <span class="brand-mark" aria-hidden="true">HJ</span>
+          <span class="brand-name">Himani Jangam</span>
+        </a>
+        <nav class="nav" id="navMenu" aria-label="Primary">
+          <a href="#about">About</a>
+          <a href="#experience">Experience</a>
+          <a href="#work">Case studies</a>
+          <a href="#skills">Skills</a>
+          <a href="#education">Education</a>
+          <a href="#contact">Contact</a>
+          <a class="nav-cta" href="assets/Himani_Jangam_Resume.pdf" download>Résumé</a>
+        </nav>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navMenu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- ============ HERO ============ -->
+      <section class="hero" id="top">
+        <div class="hero-backdrop" aria-hidden="true"></div>
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="status-badge reveal"><span class="pulse-dot" aria-hidden="true"></span>Open to senior engineering roles</p>
+            <p class="eyebrow reveal" style="--d: 0.05s">Senior Software Engineer · Distributed Systems · AWS</p>
+            <h1 class="reveal" style="--d: 0.1s">
+              Himani <span class="grad-text">Jangam</span>
+            </h1>
+            <p class="hero-lede reveal" style="--d: 0.15s">
+              5+ years at <strong>Amazon</strong> designing event-driven, multi-tenant platforms — systems serving
+              <strong>7M+ monthly users</strong>, migrations of <strong>48M records with zero downtime</strong>, and
+              <strong>99.9% availability</strong> under Prime Day peak traffic.
+            </p>
+            <div class="hero-actions reveal" style="--d: 0.2s">
+              <a class="button primary" href="#work">See case studies</a>
+              <a class="button secondary" href="assets/Himani_Jangam_Resume.pdf" download>
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                Download résumé
+              </a>
+            </div>
+            <ul class="hero-links reveal" style="--d: 0.25s">
+              <li>
+                <a href="mailto:himani.jangam.jobs@gmail.com">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+                  Email
+                </a>
+              </li>
+              <li>
+                <a href="https://linkedin.com/in/himanijangam" target="_blank" rel="noreferrer">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+                  LinkedIn
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/Himani70" target="_blank" rel="noreferrer">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.86 10.91c.58.11.79-.25.79-.55v-2.17c-3.2.7-3.87-1.36-3.87-1.36-.53-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.26.72-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.25.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.05 11.05 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.12 3.05.74.81 1.18 1.84 1.18 3.09 0 4.42-2.69 5.39-5.26 5.68.41.35.78 1.05.78 2.12v3.14c0 .3.2.67.8.55A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5z"/></svg>
+                  GitHub
+                </a>
+              </li>
+            </ul>
           </div>
 
-          <h1>Himani <span class="grad-text">Jangam</span></h1>
-          <p class="role">Senior Software Engineer</p>
-          <p class="pitch">
-            I design event-driven, multi-tenant platforms on AWS — and lead the cross-team efforts
-            that keep them fast, cheap, and up. 5+ years at <strong>Amazon</strong>.
-          </p>
-
-          <p class="status-badge"><span class="pulse-dot" aria-hidden="true"></span>Open to senior engineering roles</p>
-
-          <nav class="side-nav" aria-label="Primary">
-            <a href="#about"><span>01</span>About</a>
-            <a href="#impact"><span>02</span>Impact</a>
-            <a href="#experience"><span>03</span>Experience</a>
-            <a href="#work"><span>04</span>Case studies</a>
-            <a href="#skills"><span>05</span>Skills</a>
-            <a href="#education"><span>06</span>Education</a>
-            <a href="#contact"><span>07</span>Contact</a>
-          </nav>
-
-          <div class="sidebar-actions">
-            <a class="button primary" href="assets/Himani_Jangam_Resume.pdf" download>
-              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-              Download résumé
-            </a>
-          </div>
-
-          <ul class="social-row" aria-label="Contact links">
-            <li>
-              <a href="mailto:himani.jangam.jobs@gmail.com" aria-label="Email Himani" title="Email">
-                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
-              </a>
-            </li>
-            <li>
-              <a href="https://linkedin.com/in/himanijangam" target="_blank" rel="noreferrer" aria-label="LinkedIn profile" title="LinkedIn">
-                <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
-              </a>
-            </li>
-            <li>
-              <a href="https://github.com/Himani70" target="_blank" rel="noreferrer" aria-label="GitHub profile" title="GitHub">
-                <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.86 10.91c.58.11.79-.25.79-.55v-2.17c-3.2.7-3.87-1.36-3.87-1.36-.53-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.26.72-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.25.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.05 11.05 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.12 3.05.74.81 1.18 1.84 1.18 3.09 0 4.42-2.69 5.39-5.26 5.68.41.35.78 1.05.78 2.12v3.14c0 .3.2.67.8.55A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5z"/></svg>
-              </a>
-            </li>
-            <li>
-              <a href="tel:+19847771057" aria-label="Call 984-777-1057" title="984-777-1057">
-                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.58 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-              </a>
-            </li>
-          </ul>
-          <p class="sidebar-loc">
-            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>
-            Seattle, WA
-          </p>
+          <aside class="hero-card reveal" style="--d: 0.2s" aria-label="Profile summary">
+            <div class="avatar-wrap">
+              <img
+                class="profile-photo"
+                id="profilePhoto"
+                src="https://avatars.githubusercontent.com/u/55857710?v=4"
+                alt="Portrait of Himani Jangam"
+                width="112"
+                height="112"
+              />
+              <div class="avatar-fallback" id="avatarFallback" aria-hidden="true">HJ</div>
+            </div>
+            <div class="hero-card-id">
+              <h2>Himani Jangam</h2>
+              <p>Senior Software Development Engineer</p>
+              <p class="hero-card-loc">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                Seattle, WA
+              </p>
+            </div>
+            <ul class="hero-card-facts">
+              <li>
+                <span class="fact-key">Amazon</span>
+                <span class="fact-val">Senior SDE (L5) · Feb 2021 – Present</span>
+              </li>
+              <li>
+                <span class="fact-key">Focus</span>
+                <span class="fact-val">Event-driven &amp; multi-tenant platforms on AWS</span>
+              </li>
+              <li>
+                <span class="fact-key">Education</span>
+                <span class="fact-val">M.S. Computer Science, NC State — 4.0 GPA</span>
+              </li>
+              <li>
+                <span class="fact-key">Leadership</span>
+                <span class="fact-val">Prime Day org lead across 10 engineering teams</span>
+              </li>
+            </ul>
+          </aside>
         </div>
-      </header>
 
-      <!-- ============ CONTENT ============ -->
-      <main class="content" id="main">
-        <!-- About -->
-        <section class="section" id="about">
-          <p class="section-label reveal">01 — About</p>
-          <h2 class="reveal" style="--d: 0.05s">Engineer who owns systems end to end — from design review to 3&nbsp;a.m. pager.</h2>
-          <p class="reveal" style="--d: 0.1s">
-            I spent 5+ years at Amazon on the <strong>Alexa Shopping</strong> and <strong>Compensation</strong> teams,
-            with end-to-end ownership across the full development lifecycle: architecture, delivery, operations, and
-            scale. My work centers on event-driven and multi-tenant architectures — the kind of platform engineering
-            that lets ten other teams move faster without filing a ticket.
-          </p>
-          <p class="reveal" style="--d: 0.15s">
-            I hold an M.S. in Computer Science from North Carolina State University (4.0 GPA) and a bachelor's in
-            Computer Science from IIT Bhubaneswar. I'm now looking for my next opportunity: a senior role with real
-            ownership and direct impact on users.
-          </p>
-          <div class="about-cards">
-            <article class="info-card reveal" style="--d: 0.1s">
-              <h3>Org-scale coordination</h3>
-              <p>Central readiness lead for Amazon Prime Day across 10 engineering teams — weekly syncs, dependency escalations, 7 milestones delivered.</p>
-            </article>
-            <article class="info-card reveal" style="--d: 0.15s">
-              <h3>Technical leadership</h3>
-              <p>Led 7 engineers across two orgs for a 5-market internationalization launch; primary reviewer holding external contributions to quality, performance, and security bars.</p>
-            </article>
-            <article class="info-card reveal" style="--d: 0.2s">
-              <h3>Operational rigor</h3>
-              <p>Capacity planning, load and stress testing, gamedays, operational readiness reviews, on-call — and the mentoring and code-review culture that keeps it sustainable.</p>
-            </article>
-          </div>
-        </section>
-
-        <!-- Impact -->
-        <section class="section" id="impact">
-          <p class="section-label reveal">02 — Impact</p>
-          <h2 class="reveal" style="--d: 0.05s">The numbers I'm proudest of.</h2>
-          <dl class="impact-grid" aria-label="Career impact at a glance">
-            <div class="impact-tile reveal">
-              <dd><span class="counter" data-count="7" data-suffix="M+">0</span></dd>
+        <div class="container">
+          <dl class="impact-strip reveal" aria-label="Career impact at a glance">
+            <div class="impact-tile">
               <dt>Monthly active users</dt>
+              <dd><span class="counter" data-count="7" data-suffix="M+">0</span></dd>
               <p>reached by the campaign platform I designed</p>
             </div>
-            <div class="impact-tile reveal" style="--d: 0.06s">
-              <dd><span class="counter" data-count="1.3" data-prefix="$" data-suffix="M" data-decimals="1">0</span></dd>
+            <div class="impact-tile">
               <dt>Saved annually</dt>
+              <dd><span class="counter" data-count="1.3" data-prefix="$" data-suffix="M" data-decimals="1">0</span></dd>
               <p>by a fault-tolerant compensation API redesign</p>
             </div>
-            <div class="impact-tile reveal" style="--d: 0.12s">
-              <dd><span class="counter" data-count="48" data-suffix="M">0</span></dd>
+            <div class="impact-tile">
               <dt>Records migrated</dt>
+              <dd><span class="counter" data-count="48" data-suffix="M">0</span></dd>
               <p>zero downtime, 100% verified consistency</p>
             </div>
-            <div class="impact-tile reveal" style="--d: 0.18s">
-              <dd><span class="counter" data-count="99.9" data-suffix="%" data-decimals="1">0</span></dd>
+            <div class="impact-tile">
               <dt>Peak availability</dt>
+              <dd><span class="counter" data-count="99.9" data-suffix="%" data-decimals="1">0</span></dd>
               <p>at 300 TPS during Amazon Prime Day</p>
             </div>
           </dl>
-        </section>
+        </div>
+      </section>
 
-        <!-- Experience -->
-        <section class="section" id="experience">
-          <p class="section-label reveal">03 — Experience</p>
+      <!-- ============ ABOUT ============ -->
+      <section class="section" id="about">
+        <div class="container">
+          <p class="section-label reveal">01 · About</p>
+          <div class="section-grid">
+            <div class="reveal" style="--d: 0.05s">
+              <h2>Engineer who owns systems end to end — from design review to 3&nbsp;a.m. pager.</h2>
+              <p>
+                I spent 5+ years at Amazon on the <strong>Alexa Shopping</strong> and <strong>Compensation</strong> teams,
+                with end-to-end ownership across the full development lifecycle: architecture, delivery, operations, and
+                scale. My work centers on event-driven and multi-tenant architectures — the kind of platform engineering
+                that lets ten other teams move faster without filing a ticket.
+              </p>
+              <p>
+                I hold an M.S. in Computer Science from North Carolina State University (4.0 GPA) and a bachelor's in
+                Computer Science from IIT Bhubaneswar. I'm now looking for my next opportunity: a senior role with real
+                ownership and direct impact on users.
+              </p>
+            </div>
+            <div class="about-cards">
+              <article class="info-card reveal" style="--d: 0.1s">
+                <h3>Org-scale coordination</h3>
+                <p>Central readiness lead for Amazon Prime Day across 10 engineering teams — weekly syncs, dependency escalations, 7 milestones delivered.</p>
+              </article>
+              <article class="info-card reveal" style="--d: 0.15s">
+                <h3>Technical leadership</h3>
+                <p>Led 7 engineers across two orgs for a 5-market internationalization launch; primary reviewer holding external contributions to quality, performance, and security bars.</p>
+              </article>
+              <article class="info-card reveal" style="--d: 0.2s">
+                <h3>Operational rigor</h3>
+                <p>Capacity planning, load and stress testing, gamedays, operational readiness reviews, on-call — and the mentoring and code-review culture that keeps it sustainable.</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ EXPERIENCE ============ -->
+      <section class="section section-alt" id="experience">
+        <div class="container">
+          <p class="section-label reveal">02 · Experience</p>
           <h2 class="reveal" style="--d: 0.05s">Five years shipping at Amazon scale.</h2>
 
           <div class="career-path reveal" style="--d: 0.08s" aria-label="Career progression at Amazon">
@@ -224,25 +261,27 @@
               <p class="xp-dates">Feb 2021 — Present</p>
             </header>
 
-            <div class="xp-team">
-              <h4><span class="team-dot" aria-hidden="true"></span>Alexa Shopping</h4>
-              <ul>
-                <li>Led design and delivery of a <strong>greenfield self-service campaign portal</strong> (Spring Boot on ECS) — adopted by <strong>10+ internal teams</strong> to run 20+ campaigns reaching <strong>7M+ monthly active users</strong>.</li>
-                <li>Automated cross-team launch coordination behind APIs, cutting campaign launch time <strong>94%</strong> — from 3 days to under 2 hours.</li>
-                <li>Built OIDC authentication with DynamoDB-backed sessions and fine-grained, resource-level authorization — permission turnaround dropped from <strong>24 hours to under a minute</strong>.</li>
-                <li>Org and team lead for <strong>Prime Day 2023</strong>: aligned 10 engineering teams on 7 readiness milestones; my team's 6 microservices held <strong>99.9% availability at 300 TPS</strong> peak.</li>
-                <li>Led internationalization of the conversational-shopping orchestrator behind <strong>Amazon Rufus</strong>, enabling expansion across 5 global markets with a 7-engineer cross-org team.</li>
-                <li>As SDE I — built the <strong>Customer Interruption &amp; Feedback Filter (CIF)</strong>: exclusion-cohort logic from historical interruption rates to screen high-risk users out of Alexa campaign targeting, with a BI-partnered SQL ETL pipeline that cleared campaign-launch blockers.</li>
-                <li>CIF cut interruption rates <strong>33%</strong>, enabling evergreen campaigns worth <strong>~500K MAU annually</strong> — and was adopted by <strong>~15 internal teams</strong> beyond the original use case.</li>
-              </ul>
-            </div>
-            <div class="xp-team">
-              <h4><span class="team-dot alt" aria-hidden="true"></span>Amazon Compensation</h4>
-              <ul>
-                <li>Re-architected a single-tenant payroll compensation system into a <strong>multi-tenant platform</strong>, scaling from 1M to <strong>2M employees</strong> and cutting business onboarding time <strong>70%</strong>.</li>
-                <li>Executed a <strong>zero-downtime backfill of 48M DynamoDB records</strong> with AWS Glue — 100% consistency proven by validation and reconciliation scripts.</li>
-                <li>Redesigned the shift-differential API with a fault-tolerant fallback and Lambda migration: errors down <strong>92%</strong> (4% → 0.3%), <strong>$1.3M saved annually</strong>, P50 latency down 27%.</li>
-              </ul>
+            <div class="xp-teams">
+              <div class="xp-team">
+                <h4><span class="team-dot" aria-hidden="true"></span>Alexa Shopping</h4>
+                <ul>
+                  <li>Led design and delivery of a <strong>greenfield self-service campaign portal</strong> (Spring Boot on ECS) — adopted by <strong>10+ internal teams</strong> to run 20+ campaigns reaching <strong>7M+ monthly active users</strong>.</li>
+                  <li>Automated cross-team launch coordination behind APIs, cutting campaign launch time <strong>94%</strong> — from 3 days to under 2 hours.</li>
+                  <li>Built OIDC authentication with DynamoDB-backed sessions and fine-grained, resource-level authorization — permission turnaround dropped from <strong>24 hours to under a minute</strong>.</li>
+                  <li>Org and team lead for <strong>Prime Day 2023</strong>: aligned 10 engineering teams on 7 readiness milestones; my team's 6 microservices held <strong>99.9% availability at 300 TPS</strong> peak.</li>
+                  <li>Led internationalization of the conversational-shopping orchestrator behind <strong>Amazon Rufus</strong>, enabling expansion across 5 global markets with a 7-engineer cross-org team.</li>
+                  <li>As SDE I — built the <strong>Customer Interruption &amp; Feedback Filter (CIF)</strong>: exclusion-cohort logic from historical interruption rates to screen high-risk users out of Alexa campaign targeting, with a BI-partnered SQL ETL pipeline that cleared campaign-launch blockers.</li>
+                  <li>CIF cut interruption rates <strong>33%</strong>, enabling evergreen campaigns worth <strong>~500K MAU annually</strong> — and was adopted by <strong>~15 internal teams</strong> beyond the original use case.</li>
+                </ul>
+              </div>
+              <div class="xp-team">
+                <h4><span class="team-dot alt" aria-hidden="true"></span>Amazon Compensation</h4>
+                <ul>
+                  <li>Re-architected a single-tenant payroll compensation system into a <strong>multi-tenant platform</strong>, scaling from 1M to <strong>2M employees</strong> and cutting business onboarding time <strong>70%</strong>.</li>
+                  <li>Executed a <strong>zero-downtime backfill of 48M DynamoDB records</strong> with AWS Glue — 100% consistency proven by validation and reconciliation scripts.</li>
+                  <li>Redesigned the shift-differential API with a fault-tolerant fallback and Lambda migration: errors down <strong>92%</strong> (4% → 0.3%), <strong>$1.3M saved annually</strong>, P50 latency down 27%.</li>
+                </ul>
+              </div>
             </div>
           </article>
 
@@ -261,13 +300,17 @@
               </ul>
             </div>
           </article>
-        </section>
+        </div>
+      </section>
 
-        <!-- Case studies -->
-        <section class="section" id="work">
-          <p class="section-label reveal">04 — Case studies</p>
+      <!-- ============ CASE STUDIES ============ -->
+      <section class="section" id="work">
+        <div class="container">
+          <p class="section-label reveal">03 · Case studies</p>
           <h2 class="reveal" style="--d: 0.05s">Selected work, with the architecture behind it.</h2>
-          <p class="section-sub reveal" style="--d: 0.1s">Impact up front; expand any study for the system design underneath.</p>
+          <p class="section-sub reveal" style="--d: 0.1s">
+            Impact up front; expand any study for the system design underneath.
+          </p>
 
           <div class="case-list">
             <article class="case-card reveal">
@@ -396,11 +439,13 @@
               <p class="tech-tags"><span>Data pipelines</span><span>S3</span><span>DynamoDB</span><span>CloudWatch</span></p>
             </article>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <!-- Skills -->
-        <section class="section" id="skills">
-          <p class="section-label reveal">05 — Skills</p>
+      <!-- ============ SKILLS ============ -->
+      <section class="section section-alt" id="skills">
+        <div class="container">
+          <p class="section-label reveal">04 · Skills</p>
           <h2 class="reveal" style="--d: 0.05s">Tools I reach for.</h2>
           <div class="skills-grid">
             <article class="skill-group reveal">
@@ -428,11 +473,13 @@
               </p>
             </article>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <!-- Education -->
-        <section class="section" id="education">
-          <p class="section-label reveal">06 — Education</p>
+      <!-- ============ EDUCATION ============ -->
+      <section class="section" id="education">
+        <div class="container">
+          <p class="section-label reveal">05 · Education</p>
           <h2 class="reveal" style="--d: 0.05s">Education</h2>
           <div class="edu-grid">
             <article class="edu-card reveal">
@@ -448,12 +495,14 @@
               <p class="edu-dates">Jul 2015 — May 2019</p>
             </article>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <!-- Contact -->
-        <section class="section" id="contact">
-          <p class="section-label reveal">07 — Contact</p>
-          <h2 class="reveal" style="--d: 0.05s">Hiring for a senior engineer who owns outcomes?</h2>
+      <!-- ============ CONTACT ============ -->
+      <section class="section section-alt" id="contact">
+        <div class="container contact-wrap">
+          <p class="section-label reveal">06 · Contact</p>
+          <h2 class="reveal" style="--d: 0.05s">Hiring for a senior engineer<br />who owns outcomes?</h2>
           <p class="contact-lede reveal" style="--d: 0.1s">
             I'm looking for my next opportunity — a senior role with real ownership and direct impact on users.
             If that sounds like your team, let's talk. Based in Seattle, WA.
@@ -462,20 +511,22 @@
             <a class="button primary" href="mailto:himani.jangam.jobs@gmail.com">himani.jangam.jobs@gmail.com</a>
             <a class="button secondary" href="https://linkedin.com/in/himanijangam" target="_blank" rel="noreferrer">LinkedIn</a>
             <a class="button secondary" href="https://github.com/Himani70" target="_blank" rel="noreferrer">GitHub</a>
-            <a class="button secondary" href="tel:+19847771057">984-777-1057</a>
           </div>
           <p class="contact-alt reveal" style="--d: 0.2s">
             Prefer paper? <a href="assets/Himani_Jangam_Resume.pdf" download>Download the PDF résumé</a> or
             <a href="resume.html">view it on the web</a>.
           </p>
-        </section>
+        </div>
+      </section>
+    </main>
 
-        <footer class="footer">
-          <p>© <span id="year">2026</span> Himani Jangam · Hand-built with vanilla HTML, CSS &amp; JavaScript.</p>
-          <a class="to-top" href="#top" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">Back to top ↑</a>
-        </footer>
-      </main>
-    </div>
+    <footer class="footer">
+      <div class="container footer-inner">
+        <p>© <span id="year">2026</span> Himani Jangam · Seattle, WA</p>
+        <p class="footer-note">Hand-built with vanilla HTML, CSS &amp; JavaScript.</p>
+        <a class="to-top" href="#top">Back to top ↑</a>
+      </div>
+    </footer>
 
     <script src="script.js"></script>
   </body>
