@@ -10,4 +10,4 @@ git commit -m "Add portfolio site and GitHub Pages workflow"
 echo "Pushing to main branch..."
 git push origin main
 
-echo "Done. Then enable GitHub Pages in repository settings with gh-pages as the source."
+echo "Done. GitHub Actions will build and publish the site to GitHub Pages."

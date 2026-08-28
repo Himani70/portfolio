@@ -28,6 +28,6 @@ python3 -m http.server 8000
 
 ## Deploy (GitHub Pages)
 
-`.github/workflows/pages.yml` publishes the repo root to the `gh-pages` branch on every push to `main`. Enable GitHub Pages in the repo settings with `gh-pages` as the source; the site serves at `https://Himani70.github.io/portfolio/`.
+`.github/workflows/pages.yml` deploys the repo root straight to GitHub Pages (official `actions/deploy-pages` flow) on every push to `main`. The Pages source is set to "GitHub Actions" in the repo settings; the site serves at `https://himani70.github.io/portfolio/`.
 
 `deploy.sh` is a convenience script that commits and pushes everything to `main`.
